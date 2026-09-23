@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Maria E. F. Lunelli</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header-cv">
+        <h1>Maria Eduarda Feliciano Lunelli</h1>
+
+        <figure>
+            <img src="imagens/foto-perfil.png" alt="Foto de perfil de Maria E. F. Lunelli" width="150">
+            <figcaption>Foto de perfil profissional de Maria Eduarda Feliciano Lunelli</figcaption>
+        </figure>
+
+        <h2>Estudante de Engenharia de Software </h2>
+    </header>
+
+    <aside class="cartao-conteudo">
+        <section>
+            <h3 class="titulo-secao">Contato</h3>
+            <ul>
+                <li>
+                    <img src="icones/telefone.svg" alt="Ícone de Telefone" width="16">
+                    <strong class="destaque-negrito">Telefone:</strong> (43) 98446-3719
+                </li>
+                <li>
+                    <img src="icones/email.svg" alt="Ícone de E-mail" width="16">
+                    <strong class="destaque-negrito">Email:</strong> <a href="mailto:mariaeduardafelicianolunelli@gmail.com">mariaeduardafelicianolunelli@gmail.com</a>
+                </li>
+                <li>
+                    <img src="icones/linkedin.svg" alt="Ícone do LinkedIn" width="16">
+                    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/maria-eduarda-feliciano-lunelli" target="_blank">https://www.linkedin.com/in/maria-eduarda-feliciano-lunelli-12b301333?utm_source=share_via&utm_content=profile&utm_medium=member_ios</a>                </li>
+                <li>
+                    <img src="icones/github.svg" alt="Ícone do GitHub" width="16">
+                    <strong class="destaque-negrito">GitHub:</strong> <a href="https://github.com/malunelli" target="_blank">github.com/malunelli</a>
+                </li>
+                <li>
+                    <img src="icones/cidade.svg" alt="Ícone de Localização" width="16">
+                    <strong class="destaque-negrito">Cidade:</strong> Cornélio Procópio - PR
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="titulo-secao">Habilidades</h3>
+            <ul>
+                <li>Lógica de Programação</li>
+                <li>HTML5 &amp; CSS3</li>
+                <li>Inglês Fluente </li>
+                <li>Atendimento ao Público &amp; Comunicação</li>
+                <li>Organização &amp; Gestão Administrativa</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+        </section>
+    </aside>
+
+    <main class="cartao-conteudo">
+        <section>
+            <h2 class="titulo-secao">Resumo</h2>
+            <!-- Uso de classe para aplicar itálico -->
+            <p class="destaque-italico">Estudante de Engenharia de Software na UTFPR com foco em desenvolvimento web e tecnologia. Possuo sólida formação técnica, facilidade de aprendizado e experiência prática em rotinas administrativas, atendimento ao público e ensino de idiomas, buscando oportunidades para evoluir na área de tecnologia.</p>
+        </section>
+
+        <section>
+            <h2 class="titulo-secao">ODS que pretendo contribuir</h2>
+            <figure>
+                <img src="imagens/ods08.jpg" alt="Selo do Objetivo de Desenvolvimento Sustentável 8" width="180">
+                <figcaption>ODS 8: Promover o crescimento económico inclusivo e sustentável.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/ods10.jpg" alt="Selo do Objetivo de Desenvolvimento Sustentável 10" width="180">
+                <figcaption>ODS 10: Reduzir a desigualdade dentro dos países e entre eles.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2 class="titulo-secao">Experiência Profissional</h2>
+            <article>
+                <h3>Apoio Administrativo | Setor Público</h3>
+                <p><time datetime="2023-01">Jan/2023</time> - <time datetime="2023-10">Out/2023</time></p>
+                <ul>
+                    <li>Responsável pelo agendamento de exames e consultas médicas.</li>
+                    <li>Atendimento ao público com foco na resolução de demandas.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="titulo-secao">Educação</h2>
+            <article>
+                <h3>Bacharelado em Engenharia de Software</h3>
+                <p>UTFPR - Universidade Tecnológica Federal do Paraná | Cursando</p>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="titulo-secao">Contato Rápido</h2>
+            <!-- Botão com tipo explícito para o seletor de atributo -->
+            <button type="button" onclick="document.getElementById('modalContato').showModal()">Enviar informações de contato</button>
+        </section>
+
+        <dialog id="modalContato">
+            <h2 class="titulo-secao">Enviar Informações de Contato</h2>
+            <form method="dialog">
+                <p>
+                    <label for="nomeModal">Nome Completo:</label><br>
+                    <input type="text" id="nomeModal" name="nomeModal" required>
+                </p>
+                <p>
+                    <label for="instagramModal">Link para o Instagram:</label><br>
+                    <input type="url" id="instagramModal" name="instagramModal" required>
+                </p>
+                <p>
+                    <label for="whatsappModal">Número do WhatsApp:</label><br>
+                    <input type="tel" id="whatsappModal" name="whatsappModal" required>
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="button" onclick="document.getElementById('modalContato').close()">Fechar</button>
+                </p>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Curriculum Vitae de Maria E. F. Lunelli</p>
+    </footer>
+
+</body>
+</html>
